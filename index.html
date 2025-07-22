@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knight & Rook LLC | Vinyl Records</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dark-blue: #2b2d42;
+      --gray-blue: #8d99ae;
+      --light-gray: #edf2f4;
+      --bright-red: #ef233c;
+      --dark-red: #d90429;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Libre Baskerville', serif;
+      background-color: var(--light-gray);
+      color: var(--dark-blue);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    header {
+      background: var(--dark-blue);
+      color: white;
+      padding: 2rem;
+      width: 100%;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      background: var(--gray-blue);
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+      width: 100%;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      animation: slideDown 1s ease-in-out;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--bright-red);
+    }
+    .hero {
+      background-color: var(--dark-blue);
+      color: white;
+      padding: 5rem 2rem;
+      width: 100%;
+      animation: fadeIn 2s ease-in;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 800px;
+      width: 100%;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+    .section:nth-of-type(even) {
+      animation-delay: 0.5s;
+    }
+    .section h2 {
+      color: var(--dark-red);
+    }
+    footer {
+      background: var(--dark-blue);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      width: 100%;
+      animation: fadeIn 1s ease-in;
+    }
+    a {
+      color: var(--dark-red);
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: var(--bright-red);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Knight & Rook LLC</h1>
+    <p>Vintage Vinyl. Timeless Sound.</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#shop">Shop</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Buy • Sell • Spin</h2>
+    <p>Discover rare records, iconic albums, and audiophile treasures</p>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Knight & Rook LLC</h2>
+    <p>Knight & Rook LLC is a passionate vinyl record business specializing in the buying and selling of curated, high-quality vinyl. We serve collectors, DJs, and music enthusiasts with a dedication to analog sound and timeless musical craftsmanship.</p>
+  </section>
+
+  <section class="section" id="shop">
+    <h2>Shop Our Collection</h2>
+    <p>Browse our full inventory of vinyl records on our Discogs storefront.</p>
+    <p>
+      <a href="https://www.discogs.com/seller/knightandrook/profile" target="_blank" style="display:inline-block; padding:0.75rem 1.5rem; background-color: var(--dark-red); color: white; border-radius: 4px; text-decoration: none; font-weight: bold; transition: background-color 0.3s;">
+        Explore Our Inventory
+      </a>
+    </p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:knightandrookllc@gmail.com">knightandrookllc@gmail.com</a></p>
+    <p>Phone: <a href="tel:+12018701456">(201) 870-1456</a></p>
+  </section>
+
+  <section class="section">
+    <h2>Instagram</h2>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/knightrookllc/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px auto; max-width:540px; min-width:326px; padding:0; width:100%;">
+      <div style="padding:16px;">
+        <a href="https://www.instagram.com/knightrookllc/?utm_source=ig_embed&amp;utm_campaign=loading" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+          <div style="padding: 19% 0;"></div>
+          <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+            <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 ..."></path></g></g></g></svg>
+          </div>
+          <div style="padding-top: 8px;">
+            <div style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this profile on Instagram</div>
+          </div>
+        </a>
+        <p style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+          <a href="https://www.instagram.com/knightrookllc/?utm_source=ig_embed&amp;utm_campaign=loading" style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">Knight &amp; Rook LLC</a> (@<a href="https://www.instagram.com/knightrookllc/?utm_source=ig_embed&amp;utm_campaign=loading" style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">knightrookllc</a>) • Instagram photos and videos
+        </p>
+      </div>
+    </blockquote>
+    <script async src="//www.instagram.com/embed.js"></script>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Knight & Rook LLC. All rights reserved.</p>
+  </footer>
+</body>
+</html>
